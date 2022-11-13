@@ -24,5 +24,6 @@ EXPOSE 53/udp 80 443 19002 19003 19004
 VOLUME ["/nxfilter/conf","/nxfilter/db","/nxfilter/log"]
 
 COPY script/entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
