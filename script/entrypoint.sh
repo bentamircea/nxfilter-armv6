@@ -4,7 +4,7 @@ set -e
 
 if [ ! "$(ls -A /nxfilter/conf)" ]
 then  
-	cp -r /nxfilter/conf.defaults/* /nxfilter/conf
+  cp -r /nxfilter/conf.defaults/* /nxfilter/conf
 fi
 
 exec /nxfilter/bin/startup.sh
